@@ -9,7 +9,7 @@
   },
 
   "test/<%= app_underscored %>/*_test.exs": {
-    "type": "test",
+    "type": "test-app",
     "alternate": "lib/<%= app_underscored %>/{}.ex",
     "template": [
       "defmodule <%= app_camelized %>.<%= glob_modulized %>Test do",
@@ -31,7 +31,7 @@
   },
 
   "test/<%= app_underscored %>_web/controllers/*_controller_test.exs": {
-    "type": "test",
+    "type": "test-controller",
     "alternate": "lib/<%= app_underscored %>_web/controllers/{}_controller.ex",
     "template": [
       "defmodule <%= app_camelized %>Web.<%= glob_modulized %>ControllerTest do",
@@ -51,7 +51,7 @@
   },
 
   "test/<%= app_underscored %>_web/controllers/*_html_test.exs": {
-    "type": "test",
+    "type": "test-html",
     "alternate": "lib/<%= app_underscored %>_web/controllers/{}_html.ex",
     "template": [
       "defmodule <%= app_camelized %>Web.<%= glob_modulized %>HTMLTest do",
@@ -73,7 +73,7 @@
   },
 
   "test/<%= app_underscored %>_web/channels/*_channel_test.exs": {
-    "type": "test",
+    "type": "test-channel",
     "alternate": "lib/<%= app_underscored %>_web/channels/{}_channel.ex",
     "template": [
       "defmodule <%= app_camelized %>Web.<%= glob_modulized %>ChannelTest do",
@@ -100,7 +100,7 @@
   },
 
   "test/<%= app_underscored %>_web/live/*_test.exs": {
-    "type": "test",
+    "type": "test-live",
     "alternate": "lib/<%= app_underscored %>_web/live/{}.ex",
     "template": [
       "defmodule <%= app_camelized %>Web.<%= glob_modulized %>Test do",
@@ -126,7 +126,7 @@
   },
 
   "test/<%= app_underscored %>_web/components/*_component_test.exs": {
-    "type": "test",
+    "type": "test-component",
     "alternate": "lib/<%= app_underscored %>_web/components/{}_component.ex",
     "template": [
       "defmodule <%= app_camelized %>Web.<%= glob_modulized %>ComponentTest do",
@@ -150,7 +150,7 @@
   },
 
   "test/<%= app_underscored %>_web/components/*_components_test.exs": {
-    "type": "test",
+    "type": "test-components",
     "alternate": "lib/<%= app_underscored %>_web/components/{}_components.ex",
     "template": [
       "defmodule <%= app_camelized %>Web.<%= glob_modulized %>ComponentsTest do",
